@@ -1253,3 +1253,81 @@ footer {
     margin-left: 470px;
 }
 /* OWNER End */
+
+
+
+
+/* RESERVATION.HTML STYLE START */
+.book-table {
+    display: flex;
+    padding-top: 199px;
+    padding-bottom: 201px;
+}
+
+.book-table-left {
+    width: 1127px;
+    height: 824px;
+    background-color: #e9e8e7;
+    border-radius: 0 50% 50% 0;
+    padding: 80px;
+    margin-left: -450px;
+}
+
+.book-table-left-2 {
+    width: 917px;
+    height: 664px;
+    background-color: #D0CCC7;
+    border-radius: 0 50% 50% 0;
+    padding: 69px;
+    margin-left: 50px;
+}
+
+.book-table-left-img {
+    margin-left: 250px;
+}
+
+.book-table-right {
+    margin-left: 90px;
+}
+
+.book-table-right-h1 {
+    color:#311F09;
+    font-size: 80px;
+    font-family: t-700;
+    margin-bottom: 49px;
+    margin-top: 100px;
+}
+
+
+select {
+    width: 475px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #f7f6f6;
+    padding: 39px 50px 39px 50px;
+    margin-bottom: 40px;
+    border: none;
+    color:#A0978C;
+    font-size: 20px;
+    font-family: p-400;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #f7f6f6;
+}
+
+.book-table-button {
+    width: 475px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FF8A00;
+    color:#ffffff;
+    font-size: 25px;
+    font-family: p-600;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #FF8A00;
+}
+
+.book-table-button:hover {
+    background-color: #ffab04;
+}
+/* RESERVATION.HTML STYLE END */
