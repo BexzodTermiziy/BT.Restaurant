@@ -1121,6 +1121,10 @@ footer {
     color: #E3E2E0;
     margin-left: -70px;
 }
+
+.bm {
+    display: none;
+}
 /* Footer End */
 
 @media screen and (min-width: 375px) {
@@ -1362,6 +1366,24 @@ footer {
        display: none;
     }
 
+    .bm {
+        display: block;
+        position: relative;
+        top: 9px;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        background-color: #FF8A00;
+    }
+
+    .bm-span {
+        position: absolute;
+        top: -2px;
+        left: 8px;
+        color: white;
+        font-size: 32px;
+    }
+
     .popular-buttons {
         margin-top: -350px;
     }
@@ -1428,11 +1450,40 @@ footer {
     /* TEBLE START */
     .table {
         position: relative;
-       margin-top: -80px;
+       margin-top: -1250px;
        width: 1100px;
        height: 1800px;
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .table-h1 {
+        margin-left: -55px;
+        font-size: 35px;
+        font-family: t-700;
+    }
+
+    .table-span {
+        font-size: 35px;
+        font-family: t-700;
+    }
+
+    .table-p {
+        font-size: 12px;
+        font-family: p-400;
+        line-height: 24px;
+        margin-left: -55px;
+        margin-top: -10px;
+    }
+
+    .table-button {
+        position: relative;
+        width: 168px;
+        height: 55px;
+        font-size: 14px;
+        font-family: p-600;
+        margin-left: -55px;
+        top: -80px;
     }
 
     .table-left {
@@ -1448,7 +1499,26 @@ footer {
         padding-left: 200px;
     }
 
+    .table-left-1 {
+        margin-top: -220px;
+        margin-left: 20px;
+        width:418px ;
+        height: 418px;
+    }
 
+    .table-left-1_1 {
+        margin-top: 50px;
+        margin-left: 50px;
+        width:320px;
+        height: 320px;
+    }
+
+    #table-left-1_2 {
+        margin-top: -35px;
+        margin-left: -35px;
+        width:253px ;
+        height:253px;
+    }
 
     /* OUR CHEF START */
     .chef-h1 {
