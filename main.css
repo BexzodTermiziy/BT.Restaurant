@@ -314,7 +314,7 @@ header {
     font-family: p-600;
 }
 
-.dinner:hover,.lunch:hover,.dessert:hover,.drink:hover {
+/* .dinner:hover,.lunch:hover,.dessert:hover,.drink:hover {
     cursor: pointer;
     width: 188px;
     height: 64px;
@@ -324,7 +324,7 @@ header {
     color:#FFFFFF;
     font-size: 18px;
     font-family: p-400;
-}
+} */
 
 .dinner {
     margin-left: 27px;
@@ -378,6 +378,8 @@ header {
     cursor: pointer;
 }
 /* Popular Menu End */
+
+
 /* Popular Top Start */
 .popular-top {
     display: flex;
@@ -398,14 +400,6 @@ header {
     border-radius: 70px;
     text-align: center;
 }
-
-/* .popular-top-img:hover {
-    left: -100px;
-    position: relative;
-    width: 526px;
-    height: 526px;
-    border-radius: 50%;
-} */
 
 .popular-top-middle {
     width: 344px;
@@ -555,6 +549,9 @@ header {
     cursor: pointer;
 }
 /* Popular Numbar End */
+
+
+
 /* Table Start */
 .table {
     width: 1542px;
@@ -657,6 +654,8 @@ header {
     cursor: pointer;
 }
 /* Table End */
+
+
 /* Chef Start */
 .chef {
     width: 1112px;
@@ -665,12 +664,6 @@ header {
     text-align: center;
     /* border: 1px solid gold; */
 }
-
-/* .chef-hover:hover {
-    width: 544px;
-    height: 649px;
-} */
-
 .chef-h1 {
     color:#311F09;
     font-size: 80px;
@@ -710,18 +703,6 @@ header {
     font-family: p-600;
     cursor: pointer;
 }
-
-/* .chef-buttom:hover {
-    width: 262px;
-    height: 104px;
-    background-color: #FF8A00;
-    border-radius: 163px;
-    border: none;
-    color:#FFFFFF;
-    font-size: 20px;
-    font-family: p-600;
-    cursor: pointer;
-} */
 /* Chef End */
 
 /* Our Say Start */
@@ -780,22 +761,6 @@ header {
     margin-left: 250px;
     display: flex;
 }
-
-/* .oursay-hover:hover {
-    left: -100px;
-    position: relative;
-    width: 261px;
-    height: 261px;
-    border-radius: 50%;
-} */
-
-/* .hover-img:hover {
-    left: -100px;
-    position: relative;
-    width: 561px;
-    height: 561px;
-    border-radius: 50%;
-} */
 
 .our-say-img-1 {
     margin-top: -20px;
@@ -1137,23 +1102,52 @@ footer {
 .footer-p22 {
     display: none;
 }
+
+.popular-h11 {
+    display: none;
+}
 /* Footer End */
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .container {
         grid-template-columns: auto;
+        max-width: 375px;
         /* border: 2px solid gold; */
     }
 
 
 /* Navbar START */
-    .navbar-2 {
-        margin-left: -100px;
+    .navbar {
+        position: relative;
+        max-width: 375px;
+    }
+    
+    nav {
+        max-width: 375px;
     }
 
+    .navbar-2 {
+     position: absolute;
+     top: 25px;
+     left: 25px;
+    }
+    
     .navbar-h3 {
         width: 51px;
         height: 51px;
+    }
+    
+    .navbar-3 {
+        position: absolute;
+        top: 25px;
+        left: 74px;
+
+    }
+
+    .navbar-5 {
+        position: absolute;
+        top: 25px;
+        left: 200px;
     }
 
     nav {
@@ -1173,18 +1167,24 @@ footer {
 
     /* HEADER START */
     header {
+        max-width: 375px;
         position: relative;
-        top: -100px;
-        left: -20px;
         display: grid;
         grid-template-columns: auto;
         flex-direction: row-reverse;
+        padding-top: 150px;
+        padding-left: 30px;
+    }
+
+    .header-left {
+        /* position: absolute; */
+        padding: 0;
+        left: 0;
     }
     
     .header-button {
         position: absolute;
-        margin-top: -50px;
-        margin-left: -90px;
+        left: 30px;
         width: 93px;
         height: 25px;
         font-size: 12px;
@@ -1192,22 +1192,18 @@ footer {
     }
 
     .header-h1 {
-        margin-top: -30px;
-        margin-left: -100px;
+        margin-top: 10px;
         font-size: 60px;
         font-family: r-700;
     }
 
     .header-p {
-        margin-top: -20px;
-        margin-left: -100px;
         font-size: 12px;
         font-family: r-400;
         line-height: 24px;
     }
 
     .ordernow {
-        margin-left: -100px;
         font-size: 12px;
         font-family: p-600;
         width: 139px;
@@ -1215,7 +1211,6 @@ footer {
     }
 
     .reservation {
-        margin-left: -10px;
         font-size: 12px;
         font-family: p-600;
         width: 139px;
@@ -1223,14 +1218,14 @@ footer {
     }
 
     .header-left-button-2 {
-        margin-top: -30px;
+        position: absolute;
+        top: 479px;
+       
     }
 
     .header-right {
-        /* width: 368px;
-        height: 315px; */
-        margin-top: -150px;
-        margin-left: 50px;
+       transform: translateX(-20px);
+       margin-top: 50px;
     }
 
     .header-right-img {
@@ -1238,13 +1233,19 @@ footer {
         height: 315px;
     }
 
+    .dessert {
+        display: none;
+    }
+    .drink {
+        display: none;
+    }
+
 
 
     /* WELCOME START */
     .welcome {
-        max-width: 393px;
-        height: 868px;
-        margin-top: -100px;
+        max-width: 375px;
+        /* height: 868px; */
         display: grid;
         grid-template-rows: auto;
     }
@@ -1300,14 +1301,24 @@ footer {
 
     /* POPULAR MENU START */
     .popular-menu {
+        position: relative;
+        max-width: 375px;
+        height: 900px;
         display: grid;
+        margin: 0;
     }
 
-    .popular-h1 {
-        margin-top: -100px;
+    .popular-h11 {
+        display: block;
+        max-width: 375px;
         font-size: 35px;
         font-family: t-700;
-        margin-left: -1000px;
+        margin:0;
+        padding-top: 62px;
+        /* margin-bottom: 50px; */
+    }
+    .popular-h1 {
+        display: none;
     }
     
     .hello {
@@ -1315,26 +1326,21 @@ footer {
         height: 40px;
         font-size:12px ;
         font-family: p-600;
-        margin-top: -100px;
-        margin-left: 10px;
     }
 
     .popular-buttons {
-        margin-left: -100px;
-    }
-    
-    .popular-top {
-        margin-left: -50px;
-        display: grid;
-        grid-template-columns: auto auto;
+        position: absolute;
+        margin-left: 25px;
+        top: 142px;
     }
 
     .popular-top-left {
         width: 155px;
         height: 265px;
         border-radius: 18px;
-        margin-top: -800px;
-        margin-left: -45px;
+        position: absolute;
+        left: 25px;
+        top: 262px;
     }
 
     .popular-top-img {
@@ -1396,21 +1402,14 @@ footer {
         font-size: 32px;
     }
 
-    .popular-buttons {
-        margin-top: -350px;
-    }
-
     .popular-top-middle {
         width: 155px;
         height: 265px;
         border-radius: 18px;
-        margin-left: -1040px;
-        margin-top: -800px;
+       position: absolute;
+       top: 262px;
+       left: 195px;
     }
-
-    /* .popular-top-left {
-       
-    } */
 
     .popular-top-right {
         display: none;
@@ -1418,7 +1417,6 @@ footer {
 
 
     .popular-bottom {
-        margin-left: -50px;
         display: grid;
         grid-template-columns: auto auto;
         flex-direction: row-reverse;
@@ -1426,25 +1424,25 @@ footer {
 
     #popular-top-left {
         grid-column: 2;
-        margin-left: -1040px;
         width: 155px;
         height: 265px;
         border-radius: 18px;
-        /* margin-left: -140px; */
-        margin-top: -985px;
+        position: absolute;
+        top: 542px;
+        left: 0;
+        transform: translateX(-175px);
     }
 
 
     #popular-top-right {
         display: block;
         grid-column: 1;
-        margin-top: -1200px;
         width: 155px;
         height: 265px;
         border-radius: 18px;
-        margin-left: -45px;
-        /* margin-left: -1040px; */
-        /* margin-top: -300px; */
+        position: absolute;
+        top: 542px;
+        left: 25px;
     }
 
     #popular-top-middle {
@@ -1462,15 +1460,20 @@ footer {
     /* TEBLE START */
     .table {
         position: relative;
-       margin-top: -1250px;
-       width: 1100px;
-       height: 900px;
+        max-width: 375px;
+        height: 900px;
         display: flex;
+        margin: 0;
+        padding: 0;
+        padding-left: 0;
         flex-direction: column-reverse;
+        /* overflow: hidden; */
     }
 
     .table-h1 {
-        margin-left: -55px;
+        position: absolute;
+        top: 60px;
+        left: 25px;
         font-size: 35px;
         font-family: t-700;
     }
@@ -1484,31 +1487,25 @@ footer {
         font-size: 12px;
         font-family: p-400;
         line-height: 24px;
-        margin-left: -55px;
-        margin-top: -10px;
+        position: absolute;
+        top: 172px;
+        left: 25px;
     }
 
     .table-button {
-        position: relative;
+        position: absolute;
         width: 168px;
         height: 55px;
         font-size: 14px;
         font-family: p-600;
-        margin-left: -55px;
-        top: -80px;
+        top: 308px;
+        left: 25px;
     }
 
     .table-left {
         position: absolute;
-        bottom:-400px;
-        left: 65px;
-        top: 650px;
-    }
-    
-    .table-right {
-        position: absolute;
-        top: -150px;
-        padding-left: 200px;
+        top: 616px;
+        transform: translateX(-40px);
     }
 
     .table-left-1 {
@@ -1565,16 +1562,24 @@ footer {
 
     /* OUR CHEF START */
 
+    .chef {
+        position: relative;
+        max-width: 375px;
+        margin: 0;
+        padding: 0;
+        height: 850px;
+    }
+
     .chef-h1 {
-       margin-top: -100px;
-       margin-left: -1050px;
+        margin-top: 35px;
        font-size:35px ;
        font-family: t-700;
     }
 
     .ourchef-1 {
-        margin-top: -80px;
-        margin-left: -130px;
+        position: absolute;
+       left: 25px;
+       top: 145px;
     }
     
     .chef-hover {
@@ -1595,21 +1600,22 @@ footer {
     }
 
     #ourchef-2 {
-        position: relative;
-        left: -919px;
-        top: -80px;
+        position: absolute;
+        left: 193px;
+        top: 145px;
     }
 
     .ferry {
         display: block;
-        margin-top: -50px;
-        margin-left: -130px;
+      position: absolute;
+      top: 488px;
+      left: 25px;
     }
     
     .ourchef-3 {
-        position: relative;
-        left: -919px;
-        top: -50px;
+        position: absolute;
+        left: 193px;
+        top: 488px;
 
     }
     
@@ -1628,7 +1634,7 @@ footer {
 
     /* OUR SAY START */
     .our-say {
-        margin-top: -650px;
+       max-width: 375px;
         height: 844px;
     }
     
@@ -1811,6 +1817,10 @@ footer {
 
 
     /* We Are Open From Start */
+    .open {
+        max-width: 375px;
+    }
+
     .open-from {
         display: none;
         width: 325px;
@@ -1895,6 +1905,10 @@ footer {
 
 
     /* FOOTER START */
+    .footer-top {
+        max-width: 375px;
+    }
+
     footer {
         display: grid;
         grid-template-columns: auto;
@@ -1980,11 +1994,9 @@ footer {
     .copyright-p {
         font-size: 14px;
         font-family: p-400;
-        margin-left: -745px;
+        margin: 0;
     }
     
-    .copyright {
-    }
 }
 
 
