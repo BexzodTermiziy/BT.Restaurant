@@ -1108,7 +1108,7 @@ footer {
 }
 /* Footer End */
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .container {
         grid-template-columns: auto;
         max-width: 375px;
@@ -1519,9 +1519,7 @@ footer {
     .table-left-1 {
         position: absolute;
         top: 10px;
-        left: 50px;
-        /* margin-top: -220px;
-        margin-left: 20px; */
+        left: 15px;
         width:418px ;
         height: 418px;
     }
@@ -1546,7 +1544,7 @@ footer {
     .table-left-2 {
         position: relative;
         top: 100px;
-        left: 360px;
+        left: 320px;
         width:87px;
         height: 87px;
     }
@@ -1562,8 +1560,8 @@ footer {
 
     .table-left-3 {
         position: relative;
-        top: 330px;
-        left: 70px;
+        top: 350px;
+        left: 55px;
         width:87px;
         height: 87px;
     }
@@ -1665,7 +1663,6 @@ footer {
     
     
     .our-say-top {
-        border: 3px solid gold;
         max-width: 375px;
         height: 845px;
         margin: 0;
@@ -1743,8 +1740,11 @@ footer {
     .div1 {
         width: 32px;
         height: 32px;
-        margin-top: 465px;
-        margin-left: 320px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 49px;
+        top: 102px;
         background:#AC63F51A;
     }
     
@@ -1752,47 +1752,83 @@ footer {
         width: 18px;
         height: 18px;
         background:#3FBAFF1A;
-        margin-left: 40px;
-        margin-top: 70px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 31px;
+        top: 262px;
     }
 
     .div3 {
         width: 68px;
         height: 68px;
         background:#f5b368b9;
-    
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 314px;
+        top: 0;
     }
 
     .div4 {
         width: 40px;
         height: 40px;
-        
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 290px;
+        top: 320px;
     }
 
     .div5 {
         width: 30px;
         height: 30px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 18px;
+        top: 720px;
     }
 
     .div6 {
         width: 18px;
         height: 18px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 10px;
+        top: 550px;
     }
 
 
     .div7 {
         width: 21px;
         height: 21px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 280px;
+        top: 505px;
     }
 
     .div8 {
         width: 30px;
         height: 30px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 80px;
+        top: 445px;
     }
 
     .div9 {
         width: 30px;
         height: 30px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 200px;
+        top: 750px;
     }
 
 
@@ -1805,7 +1841,7 @@ footer {
     .our-say-images {
         position: relative;
         top: 560px;
-        border: 3px solid red;
+        /* border: 3px solid red; */
         width: 328px;
         margin: 0 auto;
         padding: 0;
