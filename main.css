@@ -1108,7 +1108,7 @@ footer {
 }
 /* Footer End */
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     .container {
         grid-template-columns: auto;
         max-width: 375px;
@@ -1245,16 +1245,25 @@ footer {
     /* WELCOME START */
     .welcome {
         max-width: 375px;
-        /* height: 868px; */
+        position: relative;
+        margin: 0;
+        padding: 0;
         display: grid;
         grid-template-rows: auto;
     }
+    .welcome-right {
+        max-width: 375px;
+    }
+    .welcome-img {
+        max-width: 375px;
+    }
 
     .welcome-h1 {
+        position: absolute;
+        top: 74px;
+        left: 25px;
         font-size: 35px;
         font-family: t-700;
-        margin-left: -60px;
-        margin-top: -30px;
     }
     
     .welcome-span {
@@ -1266,8 +1275,9 @@ footer {
         font-size: 12px;
         font-family: p-400;
         line-height: 24px;
-        margin-left: -60px;
-        margin-top: -30px;
+        position: absolute;
+        top: 130px;
+        left: 25px;
     }
     
     .welcome-button {
@@ -1275,26 +1285,23 @@ footer {
         height: 55px;
         font-size: 14px;
         font-family: p-600;
-        margin-left: -60px;
-        position: relative;
-        top: -50px;
+        position: absolute;
+        top: 324px;
+        left: 25px;
     }
 
     .welcome-img {
         grid-row: 2;
-        margin-top: -150px;
     }
 
     #welcome-img {
-        width: 377px;
-        height:375px ;
-        margin-top: -50px;
+        width: 375px;
+        height:375px;
+        margin-top: 20px;
     }
 
     .welcome-right {
         grid-row: 1;
-        padding-left: 100px;
-        margin-top: -50px;
     }
 
 
@@ -1503,21 +1510,28 @@ footer {
     }
 
     .table-left {
+        max-width: 375px;
         position: absolute;
-        top: 616px;
+        top: 320px;
         transform: translateX(-40px);
     }
 
     .table-left-1 {
-        margin-top: -220px;
-        margin-left: 20px;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        /* margin-top: -220px;
+        margin-left: 20px; */
         width:418px ;
         height: 418px;
     }
 
     .table-left-1_1 {
-        margin-top: 50px;
-        margin-left: 50px;
+       top: 50px;
+       left: 50px;
+        position: relative;
+        margin: 0;
+        padding: 0;
         width:320px;
         height: 320px;
     }
@@ -1531,15 +1545,16 @@ footer {
 
     .table-left-2 {
         position: relative;
-        top: -510px;
-        left: 320px;
+        top: 100px;
+        left: 360px;
         width:87px;
         height: 87px;
     }
 
     #table-left-2-img {
-        margin-top: -7px;
-        margin-left: -8px;
+       position: absolute;
+       left: 10px;
+       top: 10px;
         width:69px;
         height: 69px;
     }
@@ -1547,15 +1562,16 @@ footer {
 
     .table-left-3 {
         position: relative;
-        top: -260px;
-        left: 50px;
+        top: 330px;
+        left: 70px;
         width:87px;
         height: 87px;
     }
 
     #table-left-3-img {
-        margin-top: -7px;
-        margin-left: -8px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
         width:69px;
         height: 69px;
     }
@@ -1634,20 +1650,94 @@ footer {
 
     /* OUR SAY START */
     .our-say {
-       max-width: 375px;
+        max-width: 375px;
         height: 844px;
+        position: relative;
+        margin: 0;
+        padding: 0;
     }
     
+    .our-say-h1 {
+        position: absolute;
+        left: 49px;
+        top: 109px;
+    }
+    
+    
     .our-say-top {
-        margin-left: -300px;
+        border: 3px solid gold;
+        max-width: 375px;
+        height: 845px;
+        margin: 0;
+        padding: 0;
         display: grid;
         grid-template-columns: auto;
     }
+    
+    .starla {
+        position: absolute;
+        max-width: 375px;
+        /* left: 44px; */
+        top: 229px;
+    }
+    
+    .starla-h2 {
+        position: absolute;
+        top: 84px;
+        left: 130px;
+        font-size: 16px;
+        font-family:p-600;
+    }
+
+    .starla-p {
+        font-size: 12px;
+        font-family:p-400;
+        position: absolute;
+        top: 154px;
+        left: 130px;
+    }
+
+
+    .starla-p2-img {
+        position: relative;
+        max-width: 375px;
+        /* top: 100px; */
+        margin: 0;
+        padding: 0;
+    }
+    
+    .lorem-img {
+        position: absolute;
+        left: 15px;
+        top: 80px;
+    }
+    
+    .starla-p3 {
+        position: relative;
+        top: 100px;
+        font-size: 12px;
+        font-family:p-400;
+        line-height: 24px;
+    }
+
 
     .hover-img {
         width: 120px;
         height: 120px;
-        margin-left: -400px;
+    }
+
+    .lorem-img {
+        width: 14px;
+        height: 13px;
+      
+    }
+
+    .lorem-img-2 {
+        position: absolute;
+        right:30px;
+        top: 290px;
+        width: 14px;
+        height: 13px;
     }
 
     .div1 {
@@ -1670,98 +1760,55 @@ footer {
         width: 68px;
         height: 68px;
         background:#f5b368b9;
-        margin-left: -580px;
-        margin-top: -80px;
+    
     }
 
     .div4 {
         width: 40px;
         height: 40px;
-        margin-left: -300px;
+        
     }
 
     .div5 {
         width: 30px;
         height: 30px;
-        margin-left: -840px;
-        margin-top: 100px;
     }
 
     .div6 {
         width: 18px;
         height: 18px;
-        margin-left: 320px;
-        margin-top: 15px;
     }
 
 
     .div7 {
         width: 21px;
         height: 21px;
-        margin-left: 65px;
-        margin-top: -65px;
     }
 
     .div8 {
         width: 30px;
         height: 30px;
-        margin-left: 20px;
-        margin-top: -130px;
     }
 
     .div9 {
         width: 30px;
         height: 30px;
-        margin-left: -730px;
-        margin-top: -160px;
     }
 
-    .starla-h2 {
-        font-size: 16px;
-        font-family:p-600;
-        margin-left: -390px;
-        margin-top: -30px;
-    }
-
-    .starla-p {
-        font-size: 12px;
-        font-family:p-400;
-        margin-left: -390px;
-        margin-top: 5px;
-    }
 
     .our-say-h1 {
-        margin-left: -400px;
         font-size: 35px;
         font-family: t-700;
     }
 
-    .starla-p2-img {
-        margin-left: -100px;
-    }
-
-    .lorem-img {
-        width: 14px;
-        height: 13px;
-        margin-left: -640px;
-    }
-
-    .lorem-img-2 {
-        width: 14px;
-        height: 13px;
-        margin-left: -640px;
-    }
-
-    .starla-p3 {
-        font-size: 12px;
-        font-family:p-400;
-        line-height: 24px;
-        margin-left: -390px;
-        margin-top: 5px;
-    }
 
     .our-say-images {
-        margin-left: 350px;
+        position: relative;
+        top: 560px;
+        border: 3px solid red;
+        width: 328px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .our-say-img-1 {
@@ -1773,48 +1820,61 @@ footer {
     }
 
     .oursay-hover {
+        position: relative;
         width: 55px;
         height: 55px;
-        margin-left: -40px;
-    }
-
-    .our-say-img-3 {
-        margin-left: 30px;
-        margin-top: -70px;
+        right: 15px;
     }
 
     .our-say-img-4 {
         width: 105px;
         height: 105px;
-        margin-top: 65px;
-        margin-left: -15px;
+        position: absolute;
+        top: 70px;
+        left: 110px;
+        margin: 0;
+        padding: 0;
     }
-
+    
     .our-say-img-4_1 {
         width: 89px;
         height: 89px;
-        margin-left: 8px;
-        margin-top: 10px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        margin: 0;
+        padding: 0;
     }
 
     .ellipse_img {
         width: 72px;
         height: 72px;
-        margin-top: -10px;
-        margin-left: -10px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        margin: 0;
+        padding: 0;
     }
 
-    .our-say-img-5 {
-        margin-top: -60px;
-        margin-left: 50px;
+    .our-say-img-3 {
+        position: absolute;
+        left: 60px;
+        /* right: 20px; */
+        margin: 0;
+        padding: 0;
+        top: 80px;
     }
-
     .our-say-img-6 {
-        margin-top: 0px;
-        margin-left: 50px;
+        position: absolute;
+        left: 298px;
     }
-
-
+    .our-say-img-5 {
+        position: absolute;
+        left: 240px;
+        top: 80px;
+        margin: 0;
+        padding: 0;
+    }
 
     /* We Are Open From Start */
     .open {
