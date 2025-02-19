@@ -152,6 +152,15 @@ a:hover {
     font-family: p-600;
     cursor: pointer;
 }
+a {
+    font-size: 14px;
+    font-family: p-600;
+}
+
+.login-a {
+    color: #FFFFFF;
+
+}
 
 .navbar-6-button:hover {
     background-color: #187c19;

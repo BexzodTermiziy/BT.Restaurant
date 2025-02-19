@@ -1,0 +1,153 @@
+@font-face {
+    font-family: r-700;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: p-400;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: p-500;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: p-600;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    position: relative;
+    max-width: 1440px;
+    height: 1024px;
+}
+
+.logo {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #FF8A00;
+    margin-top: 39px;
+    margin-left: 49px;
+    text-align: center;
+}
+
+.logo-p {
+    font-size: 16px;
+    font-family: p-600;
+    color: #FFFFFF;
+    padding-top: 5px;
+}
+
+.logo-h1 {
+    position: absolute;
+    top:206px;
+    left:100px;
+    font-size: 50px;
+    font-family: r-700;
+    color: #311F09;
+}
+
+.logo-p2 {
+    position: absolute;
+    top:278px;
+    left:100px;
+    font-size: 20px;
+    font-family: p-400;
+    color: #5C4529;
+}
+
+.logo-span {
+    position: relative;
+    font-size: 20px;
+    font-family: p-500;
+    color:#0095ff;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-a {
+    color: #ffffff;
+}
+
+form {
+    position: absolute;
+    top: 359px;
+    left:100px;
+}
+
+input {
+    position: relative;
+    z-index: 2;
+    background-color: #d0ccc736;
+    font-size: 20px;
+    font-family: p-400;
+    color:#A0978C;
+    padding: 15px 300px 15px 50px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.remember {
+    font-size: 20px;
+    font-family: p-400;
+    color:#5C4529;
+}
+
+.forget-span {
+    margin-left: 109px;
+}
+
+.logo-button {
+    position: absolute;
+    top:659px;
+    left:100px;
+    width: 491px;
+    height:70px;
+    border-radius: 10px;
+    background-color: #FF8A00;
+    font-size: 20px;
+    font-family: p-500;
+    color:#ffffff;
+    border: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.logo-btn {
+    position: absolute;
+    top:749px;
+    left:100px;
+    width: 491px;
+    height:70px;
+    border-radius: 10px;
+    background-color: #e9e8e8;
+    font-size: 20px;
+    font-family: p-500;
+    color:#311F09;
+    border: 1px solid #B6A38B;
+    padding-bottom: 15px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.span-img {
+  position: relative;
+  top: 12px;
+  margin-right: 20px;
+}
+
+.login-images {
+    position: absolute;
+    top: 0;
+}
