@@ -1118,17 +1118,22 @@ footer {
 
 /* Navbar START */
     .navbar {
+        /* margin-top: 20px; */
         position: relative;
         max-width: 375px;
+        /* height: 100px; */
+        background-color: white;
     }
     
     nav {
+        position: fixed;
         max-width: 375px;
+        height: 120px;
     }
 
     .navbar-2 {
      position: absolute;
-     top: 25px;
+     top: 65px;
      left: 25px;
     }
     
@@ -1139,14 +1144,14 @@ footer {
     
     .navbar-3 {
         position: absolute;
-        top: 25px;
+        top: 65px;
         left: 74px;
 
     }
 
     .navbar-5 {
         position: absolute;
-        top: 25px;
+        top: 65px;
         left: 200px;
     }
 
@@ -2008,10 +2013,9 @@ footer {
     footer {
         display: grid;
         grid-template-columns: auto;
-    }
-    
-    .footer-top {
-        width: 1000px;
+        position: relative;
+        margin: 0;
+        padding: 0;
     }
 
     .footer-pogo {
@@ -2026,19 +2030,15 @@ footer {
         margin-top: 30px;
     }
 
-    .copyright-p {
-        margin-left: -420px;
-    }
-
     .footer-logo-p1 {
         width: 51px;
         height: 51px;
-        margin-left: -130px;
-        margin-top: -50px;
+       margin-top: 92px;
+       margin-left: 25px;
     }
     
     .footer-delizioso {
-        margin-top: -50px;
+        margin-top: 92px;
     }
 
     .footer-p2 {
@@ -2049,48 +2049,46 @@ footer {
         font-size: 14px;
         font-family: p-400;
         line-height: 28px;
-        margin-top: -20px;
-        margin-left: -130px;
+        margin-left: 25px;
         color: #E3E2E0;
         display: block;
     }
 
     .social {
         margin-top: 30px;
+        margin-left: 25px;
     }
 
     .social-1 {
-         width: 40px;
+        width: 40px;
         height: 40px;
-        margin-left: -130px;
     }
     .social-2 {
-         width: 40px;
+        width: 40px;
         height: 40px;
-        margin-left: -20px;
     }
     .social-3 {
-         width: 40px;
+        width: 40px;
         height: 40px;
-        margin-left: -20px;
     }
 
     .pogo-h1 {
         font-size: 18px;
         font-family: p-600;
-        margin-left: -130px;
+        margin-left: 25px;
     }
 
     .home-pogo-1 {
         font-size: 14px;
         font-family: p-400;
-        margin-left: -130px;
+        margin-left: 25px;
     }
 
     .copyright-p {
         font-size: 14px;
         font-family: p-400;
-        margin: 0;
+        margin-right:70px;
+        margin-top: 70px;
     }
     
 }
